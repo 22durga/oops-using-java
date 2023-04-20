@@ -1,0 +1,40 @@
+//Example 1:
+class Monkey{
+    void jump(){
+        System.out.println("Jumping...");
+    }
+    void bite(){
+        System.out.println("Biting...");
+    }
+}
+
+interface BasicAnimal{
+    void eat();
+    void sleep();
+}
+
+class Human extends Monkey implements BasicAnimal{
+    public void eat() {
+        System.out.println("Eating");
+    }
+    public void sleep() {
+        System.out.println("Sleeping");
+    }
+}
+//Example 2:
+public class animal {
+    public static void main(String[] args) {
+
+        Human a1 = new Human();
+        a1.sleep();
+        Monkey m1 = new Human();
+        m1.jump();
+        m1.bite();
+
+        BasicAnimal b1 = new Human();
+ 
+        b1.eat();
+        b1.sleep();
+
+    }
+}
