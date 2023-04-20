@@ -1,0 +1,11 @@
+class shape{
+public int calculateArea(int length,int breath){
+return length*breath;
+}
+}
+class Rectangle extends shape{
+public static void main(String[] args){
+Rectangle rectangle = new Rectangle();
+System.out.println("Area:"+ rectangle.calculateArea(10,5));
+}
+}
